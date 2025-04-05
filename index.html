@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3e03e70337.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id = "header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo kambala.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Interests</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times"  onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full stack Developer</p>
+            <h1>Hi, I'm <span>Lalith Sagar</span><br>Kambala </h1>
+        </div>
+    </div>
+</div>
+
+<!---------------------About------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/Lalith.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi,I’m a passionate and driven Computer Science graduate, having recently completed my Master’s 
+                    degree in Computer Science from the University of Central Missouri. Throughout my academic journey and hands-on 
+                    projects, I’ve built a solid foundation in software development, with a strong focus on Full Stack Web Development, 
+                    Machine Learning, and Blockchain technologies.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id = "skills">
+                    <ul>
+                        <li><span>Web development</span><br>Built responsive and scalable web applications using Flask and ReactJS, with seamless integration of frontend and backend logic, database management, and API communication. </li>
+                        <li><span>Machine Learning</span><br>Developed CNN-based models for image classification tasks like brain tumor detection, leveraging deep learning frameworks and data preprocessing techniques.</li>
+                        <li><span>BlockChain</span><br>Designed and implemented blockchain-based solutions focusing on data integrity, transparency, and smart contract integration.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "experience">
+                    <ul>
+                        <li><span>Coincent Technologies &nbsp; &nbsp; &nbsp; &nbsp;  SEP 2022  - Nov 2022
+                        </span><br><b>Web Development Intern</b>As a Web Developer Intern, I built responsive web interfaces using HTML, CSS, JavaScript, and Flask, integrating APIs and managing databases with MySQL/MongoDB. I worked within SDLC and Agile sprint cycles, used Git for version control, 
+                        and performed debugging and JUnit testing to ensure code quality and performance.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "education">
+                    <ul>
+                        <li><span>Master's in Computer Sciecne at University of Central Missouri  &nbsp;2023-2025</span><br>Advanced Database Systems, Operating Systems, Compiler Design (CD), Design and Analysis of Algorithms, Advanced Software Engineering and Testing, and Cloud Computing. Through these courses, I gained hands-on experience in system-level programming, efficient algorithm design, software development life cycles, testing methodologies, and scalable cloud-based solutions.</li>
+                        <li><span>Bachelor's in Computer Science & Engineering at ANITS &nbsp;2019-2023</span><br>Java Programming, Python, Object-Oriented Programming, and Data Communication, along with advanced topics like Computer Networks, Cryptography and Network Security, and Blockchain. I also gained analytical and mathematical grounding through Probability & Statistics, while expanding my data expertise with Data Warehousing & Data Mining, Machine Learning, Natural Language Processing (NLP), Data Analytics, and Data Visualization. These courses equipped me with practical skills and conceptual knowledge 
+                            essential for solving real-world problems using modern technologies.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------   Interests   Services------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Interests</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-codepen"></i>
+                <h2>Web Designing</h2>
+                <p>Designing of the web site using frameworks and using HTML,CSS make responsive 
+                    and Innovative designs</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Machine Learning</h2>
+                <p> craft and optimize intelligent models using Python and TensorFlow, transforming data into actionable insights for tasks like computer 
+                    vision and predictive analytics. My focus is on building efficient, scalable solutions that drive innovation.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <h2>Cloud Computing</h2>
+                <p>architect and deploy scalable, high-performance cloud solutions using AWS
+                    driving efficiency and innovation in cloud infrastructure and application management.</p>
+                <a href="#">learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- -----------------------------portfolio---------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Kanban.jpg">
+                <div class="layer">
+                    <h3>Kanban Board </h3>
+                    <p>Developed an interactive Kanban board application to enhance task management and workflow visualization</p>
+                    <a href="#"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Payroll.jpg">
+                <div class="layer">
+                    <h3>Payroll Management System </h3>
+                    <p>Created a robust system to manage employee financial records, including salary calculations, 
+                        deductions, and leave management. </p>
+                    <a href="#"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Brain.jpg">
+                <div class="layer">
+                    <h3>Brain Tumour Detection Using Deep Learning </h3>
+                    <p>Constructed a convolutional neural network model achieving 94% accuracy in detecting brain tumours from MRI scans</p>
+                    <a href="#"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ---------------------------Contact------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>lalithsagarkambala@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9134880303</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/lalith-sagar-kambala-48a597199/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Resume/Soft Eng Resume Lalith Sagar K.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu  = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby3pdGMXhdfTEX21LZXyTDVrJCouNeSaocsBbfkNe_gyVrqdWgG0rVn08H1tt6fgCcK4Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Sucessfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
